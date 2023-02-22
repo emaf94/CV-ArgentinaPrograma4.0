@@ -1,0 +1,188 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray: rgb(200, 200, 200)
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--black);
+}
+h1,h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+}
+.logo {
+    margin-top: -8px;
+}
+.navbar {
+    max-width: 1140px;
+    height: 90px !important;
+    margin: 0 auto 20px auto;
+    background-color: var(--white);
+}
+.nav-link {
+    color: var(--black);
+}
+.nav-link.active{
+    background-color: var(--gray);
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: var(--white) !important;
+    background-color: var(--black);
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section.perfil, section.experiencia, section.contacto {
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 3rem 3rem 2rem 3rem;
+}
+section.perfil *, section.experiencia *, section.contacto * {
+    color: var(--white);
+}
+section.perfil .left {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+section.perfil .left .photo {
+    position: relative;
+    margin-top: -15px !important;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+section.perfil .left .photo img{
+    border-radius: 50%;
+}
+section.perfil .left p {
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+section.perfil .right {
+    flex: 1; 
+}
+section.perfil .right ul.contact {
+    list-style: none;
+}
+section.perfil .right ul.contact i {
+    margin-right: 5px;
+}
+section.perfil .right ul.contact a {
+    text-decoration: none;
+}
+section.aboutMe {
+    display: flex;
+    align-items: center;
+    padding: 3rem 3rem 2rem 3rem;
+    border: 1px solid var(--black);
+}
+section.aboutMe .info h1 {
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+section.aboutMe .info h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+section.aboutMe .info p {
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    margin-bottom: 1rem;
+}
+section.experiencia .left {
+    flex: 1;
+    margin-right: 10px;
+}
+section.experiencia .right {
+    flex: 1;
+    margin-left: 10px;
+    padding-left: 15px;
+    border-left: 1px solid var(--white);
+}
+button.accordion-button, button.accordion-button:focus, .accordion-button:not(.collapsed) {
+    padding: 2px 5px 5px 5px;
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 600;
+}
+section.habilidades {
+    align-items: center;
+    padding: 2rem 3rem 3rem 3rem;
+    border: 1px solid var(--black);
+}
+section.habilidades .barras {
+    display: flex;
+}
+section.habilidades .left {
+    flex: 1;
+}
+section.habilidades .right {
+    flex: 1;
+    margin-left: 10px;
+    padding-left: 15px;
+    border-left: 1px solid var(--black);
+}
+section.contacto {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+section.contacto h1{
+    font-size: 24px;
+}
+section.contacto .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+section.contacto .form-group > div {
+    display: flex;
+    flex-direction: column;
+}
+section.contacto .form-group > div label {
+    margin-bottom: 8px;
+}
+section.contacto .form-group > div input, section.contacto .form-group.text-wrapper textarea {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--black) !important;
+}
+section.contacto .form-group > div input:focus, section.contacto .form-group.text-wrapper textarea:focus {
+    outline: none;
+}
+section.contacto .form-group.text-wrapper {
+    display: block;
+    width: 100%;
+}
+section.contacto button {
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    padding: 1rem;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.2s ease-in-out;
+}
+section.contacto button:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+#footer {
+    height: 40px !important;
+    margin: 0 auto 0 auto !important;
+    justify-content: center;
+}
